@@ -68,12 +68,12 @@ var productsSwiper = new Swiper(".productsSwiper", {
   }
 });
 if (navigator.geolocation) {
-  const pos = [37.3520371, -121.9797559];
+  const pos = [42.365346, -71.108931 ];
   navigator.geolocation.getCurrentPosition(
     function(position) {
       const { latitude, longitude } = position.coords;
       const coords = [latitude, longitude];
-      const map = L.map("mapLocation").setView(pos, 22);
+      const map = L.map("mapLocation").setView(pos, 14);
       L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
