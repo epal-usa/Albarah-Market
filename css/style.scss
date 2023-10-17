@@ -261,25 +261,25 @@ header {
       }
     }
   }
-  &.sticky {
-    position: fixed;
-    background-color: $main;
-    box-shadow: $shadow;
-    animation: 0.5s ease-in-out fadeInDown;
-    padding: 20px 0;
-    .bar {
-      height: 0;
-      overflow: hidden;
-      padding: 0;
-      @media (max-width: 768px) {
-        padding: 0 20px;
-        height: 85px;
-      }
-    }
-    @media (max-width: 768px) {
-      padding: 0;
-    }
-  }
+  // &.sticky {
+  //   position: fixed;
+  //   background-color: $main;
+  //   box-shadow: $shadow;
+  //   animation: 0.5s ease-in-out fadeInDown;
+  //   padding: 20px 0;
+  //   .bar {
+  //     height: 0;
+  //     overflow: hidden;
+  //     padding: 0;
+  //     @media (max-width: 768px) {
+  //       padding: 0 20px;
+  //       height: 85px;
+  //     }
+  //   }
+  //   @media (max-width: 768px) {
+  //     padding: 0;
+  //   }
+  // }
 }
 main {
   .hero-section {

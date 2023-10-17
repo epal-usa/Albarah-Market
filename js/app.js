@@ -36,13 +36,13 @@ $(document).ready(function () {
   });
 });
 let header = document.querySelector("header");
-window.addEventListener("scroll", () => {
-  if (this.scrollY > 120) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (this.scrollY > 120) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// });
 var productsSwiper = new Swiper(".productsSwiper", {
   loop: true,
   spaceBetween: 28,
@@ -68,12 +68,12 @@ var productsSwiper = new Swiper(".productsSwiper", {
   }
 });
 if (navigator.geolocation) {
-  const pos = [42.365346, -71.108931 ];
+  const pos = [37.3520371, -121.9797559];
   navigator.geolocation.getCurrentPosition(
     function(position) {
       const { latitude, longitude } = position.coords;
       const coords = [latitude, longitude];
-      const map = L.map("mapLocation").setView(pos, 14);
+      const map = L.map("mapLocation").setView(pos, 22);
       L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

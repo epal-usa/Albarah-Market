@@ -261,29 +261,6 @@ header nav .nav-links a.active {
     left: 0;
   }
 }
-header.sticky {
-  position: fixed;
-  background-color: #252527;
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
-  animation: 0.5s ease-in-out fadeInDown;
-  padding: 20px 0;
-}
-header.sticky .bar {
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-}
-@media (max-width: 768px) {
-  header.sticky .bar {
-    padding: 0 20px;
-    height: 85px;
-  }
-}
-@media (max-width: 768px) {
-  header.sticky {
-    padding: 0;
-  }
-}
 
 main .hero-section {
   height: 100vh;
