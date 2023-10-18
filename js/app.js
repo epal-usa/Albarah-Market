@@ -67,25 +67,15 @@ var productsSwiper = new Swiper(".productsSwiper", {
     prevEl: ".productsSwiper-button-prev"
   }
 });
-if (navigator.geolocation) {
-  const pos = [37.3520371, -121.9797559];
-  navigator.geolocation.getCurrentPosition(
-    function(position) {
-      const { latitude, longitude } = position.coords;
-      const coords = [latitude, longitude];
-      const map = L.map("mapLocation").setView(pos, 22);
-      L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-      L.marker(coords).addTo(map).bindPopup("This is your Location");
-      L.marker(pos).addTo(map).bindPopup("Albarah Market").openPopup();
-    },
-    function() {
-      alert("cannot get current position");
-    }
-  );
-}
+// if (navigator.geolocation) {
+//   const pos = [37.3520371, -121.9797559];
+//   const map = L.map("mapLocation").setView(pos, 22);
+//       L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+//         attribution:
+//           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//       }).addTo(map);
+//       L.marker(pos).addTo(map).bindPopup("Albarah Market").openPopup();
+// }
 let navLinks = document.querySelectorAll(".nav-link a");
 let sections = document.querySelectorAll(".sec");
 let current;
